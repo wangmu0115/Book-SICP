@@ -10,7 +10,7 @@
 * [The SICP Picture Language](http://planet.racket-lang.org/package-source/soegaard/sicp.plt/2/1/planet-docs/sicp-manual/index.html)
 * [MIT Scheme在Mac OS上安装](./_Attachments/Installing_MIT_Scheme_on_MacOS.md)
 
-### 2. Videos
+### 2. Classes
 
 * [MIT CS公开课：计算机程序的构造和解释](https://www.bilibili.com/video/av8515129/)
 
@@ -20,4 +20,8 @@
 * [MIT SICP Web Site](http://mitpress.mit.edu/sicp)
 * [SICP-Solutions](http://community.schemewiki.org/?SICP-Solutions)
 * [SICP 解题集](https://sicp.readthedocs.io/en/latest/)
+
+### 4. Notes
+
+
 
