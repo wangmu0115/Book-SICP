@@ -1,4 +1,4 @@
-## 第一章 构造过程抽象 (*Chapter 1 Building Abstractions with Procedures*)
+## 第一章 构造过程抽象 (*Building Abstractions with Procedures*)
 
 > 心智的活动，除了尽力产生各种简单的认识之外，主要表现在如下三个方面：1. 将若干简单认识***组合***为一个复合认识，由此产生出各种复杂的认识；2. 将两个认识放在一起对照，不管它们如何简单或者复杂，在这样做时并不将它们合而为一；由此得到有关它们的***相互关系***的认识；3. 将有关知识与那些在实际中和它们同在的所有其他认识隔离开，这就是***抽象***，所有具有普遍性的认识都是这样得到的。
                                                                 - John Locke, An Essay Concerning Human Understanding (1690)
@@ -73,3 +73,41 @@ size
 * 数的值就是它们所表示的数值；
 * 内部运算符的值就是能完成相应操作的机器指令序列；
 * 其他名字的值就是在环境中关联于这一名字的那个对象。
+
+#### 4. 复合过程 (*Compound Procedures*)
+
+在Lisp中可以定义**过程(*procedure*)**，这是一种强大的抽象技术，通过它可以为复合操作提供名字，而后就可以将这样的操作作为一个单元使用了。**过程定义(*procedure definitions*)**的一般形式如下所示:
+
+```lisp
+(define (<name> <formal parameters>) <body>)
+```
+
+* \<name>: 一个符号，过程定义将在环境中与这个符号关联。
+* \<formal parameters>: 形式参数，用于过程体(\<body>)中，当应用过程(*apply procedure*)时对应实际参数。
+* \<body>: 过程体，是一个表达式；应用过程(*apply procedure*)时，表达式中的形式参数使用对应的实际参数取代，对取代后的表达式的求值，就是应用过程(*apply procedure*)的值。
+
+以下是定义过程的两个示例，定义的过程还可以作为其他过程的构件，进一步构造其他过程：
+
+```lisp
+(define (sqr x) (* x x))
+;; 定义平方
+(sqr 10)
+;; Value: 100
+
+(define (sum-of-sqr x y)
+    (+ (sqr x) (sqr y)))
+;; 定义平方和
+(sum-of-sqr 3 4)
+;; Value: 25
+```
+
+#### 5. 过程应用的代换模型 (*The Substitution Model for Procedure Application*)
+
+
+
+#### 6. 条件表达式和谓语 (*Conditional Expressions and Predicates*)
+
+
+
+
+
