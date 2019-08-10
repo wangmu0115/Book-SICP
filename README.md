@@ -8,7 +8,7 @@
 * [向热爱计算机科学的你推荐SICP](http://www.nowamagic.net/librarys/veda/detail/1905)
 * [Scheme入门教程](https://deathking.github.io/yast-cn/)
 * [The SICP Picture Language](http://planet.racket-lang.org/package-source/soegaard/sicp.plt/2/1/planet-docs/sicp-manual/index.html)
-* [MIT Scheme在Mac OS上安装](./_Attachments/Installing_MIT_Scheme_on_MacOS.md)
+* [MIT Scheme在Mac OS上安装](./Notes/Installing_MIT-Scheme_on_MacOS.md)
 
 ### 2. Classes
 
